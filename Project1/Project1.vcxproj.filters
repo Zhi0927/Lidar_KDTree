@@ -24,12 +24,18 @@
     <ClInclude Include="Vector3.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Ransac2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Cluster2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ransac2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

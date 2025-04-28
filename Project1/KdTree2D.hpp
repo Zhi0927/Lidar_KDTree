@@ -73,13 +73,14 @@ public:
 
 private:
 	void clearHelper(Node** node) {
-		if (node == nullptr)
+		if (node == nullptr || *node == nullptr)
 			return;
 		if ((*node)->left)
 			clearHelper(&(*node)->left);
 		if ((*node)->right)
 			clearHelper(&(*node)->right);
 		delete* node;
+		*node = nullptr;
 	}
 
 	void clear() {
